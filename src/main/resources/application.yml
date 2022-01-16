@@ -1,0 +1,19 @@
+razorpay:
+  key: rzp_test_6i2006Za1fnyi8
+  secret: Bh9WhUaadKNizBX7vQgLZ6tO
+
+spring:
+  application:
+    name: paymentgateway-management-ms
+
+  data:
+    mongodb:
+      port: 27017
+      host: localhost
+      database: octopus
+      # uri: mongodb+srv://octohealth:future@cluster0.svyi6.mongodb.net/octopus?retryWrites=true&w=majority
+
+server:
+  http2:
+    enabled: true
+  port: 9000
