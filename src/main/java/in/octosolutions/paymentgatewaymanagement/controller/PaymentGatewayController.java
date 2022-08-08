@@ -36,12 +36,12 @@ public class PaymentGatewayController {
     }
 
     @PostMapping("/order")
-    public ResponseEntity<?> createOrder(@RequestBody OrderRequest orderRequest) {
+    public ResponseEntity<?> createOrder() {
         OrderResponse razorPay = null;
         try {
             // The transaction amount is expressed in the currency subunit, such
             // as paise (in case of INR)
-            String amountInPaise = convertRupeeToPaise(orderRequest.getAmount());
+            String amountInPaise = convertRupeeToPaise("1");
             // Create an order in RazorPay and get the order id
             Order order = createRazorPayOrder(amountInPaise);
             razorPay = getOrderResponse((String) order.get("id"), amountInPaise);

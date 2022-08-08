@@ -8,10 +8,8 @@ spring:
 
   data:
     mongodb:
-      port: 27017
-      host: localhost
-      database: octopus
-      # uri: mongodb+srv://octohealth:future@cluster0.svyi6.mongodb.net/octopus?retryWrites=true&w=majority
+      database: soshealth
+      uri: mongodb://soshealth:oUoGMmS5r4gPGltAoiT10bJsCnEsNrTQZZNM4veYjjtVSAsrbmlDXuZTewRdCKreWZdIZ79iglWttqR6gUArMw==@soshealth.mongo.cosmos.azure.com:10255/?ssl=true&retrywrites=false&replicaSet=globaldb&maxIdleTimeMS=120000&appName=@soshealth@
 
 server:
   http2:
