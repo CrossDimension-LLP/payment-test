@@ -36,6 +36,7 @@ public class PaymentGatewayController {
     }
 
     @PostMapping("/order")
+    @CrossOrigin(origins = "http://localhost:3000")
     public ResponseEntity<?> createOrder() {
         OrderResponse razorPay = null;
         try {
